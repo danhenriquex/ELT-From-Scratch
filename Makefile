@@ -5,11 +5,11 @@ SERVICE_NAME = app
 
 # Install dependencies using Poetry (for local development)
 install:
-	poetry install
+	pip install -r requirements.txt
 
 # Run the main Python script (for local development)
 run:
-	poetry run python challenge_apollo/main.py
+	python3 challenge_apollo/main.py
 
 # Build the Docker image using Docker Compose
 build:
