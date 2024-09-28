@@ -1,0 +1,4 @@
+tsne:
+  n_components: 3
+  perplexity: [10, 20, 30, 40, 50]
+  random_state: 42

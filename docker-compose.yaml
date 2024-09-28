@@ -1,0 +1,11 @@
+services:
+  app:
+    image: challenge
+    build:
+      context: .
+    volumes:
+      - .:/app  # Maps the current directory to the /app directory in the container
+      - ./output:/app/output  # Maps output folder to persist results
+    environment:
+      - PYTHONUNBUFFERED=1
+    working_dir: /app
